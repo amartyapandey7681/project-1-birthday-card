@@ -1,0 +1,105 @@
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid rgb(28, 178, 88);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(167, 26, 26) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+body{
+    left: 50%;
+    background-color: #f28ab2;
+    
+}
+
+#root{
+    left : 35%;
+    top : 15%;
+    background-color: white;
+    width:20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px 5px grey;
+    position: absolute;
+    
+}
+img{
+    
+    border-radius: 50%;
+    margin-left: 8%;
+}
+.info{
+    
+    height: "100px";
+    width:"240px";
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.btn{
+    color: white;
+    background-color: #f28ab2;
+    border-radius: 3%;
+    height: 30px;
+    width : 300px;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text{
+    word-spacing: 1cm;
+}
+h2{
+    margin-left: 8%;
+    margin-top: 2%;
+}
+.text{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.age{
+    font-size: large;
+}
+.shift{
+    margin-left: 1%;
+    margin-right: 40%;
+    margin-top: 4%;
+}
+.text{
+    font-weight: bolder;
+    letter-spacing: 0.1vh;
+}
+.age{
+    font-weight: 100;
+    margin-top: 2%;
+}
